@@ -13,7 +13,8 @@ int marsExploration(string s)
 }
 
 
-int marsExploration(const string& s) {
+int marsExploration(string s)
+{
     int count = 0;
     const int n = s.size();
 
