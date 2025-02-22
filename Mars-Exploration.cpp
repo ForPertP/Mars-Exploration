@@ -1,6 +1,18 @@
 int marsExploration(string s)
 {
     int count = 0;
+    const int n = s.size();
+
+    for (int i = 0; i < n; i += 3) {
+        count += (s[i] != 'S') + (s[i+1] != 'O') + (s[i+2] != 'S');
+    }
+
+    return count;
+}
+
+int marsExploration2(string s)
+{
+    int count = 0;
     
     for (int i = 0; i < s.size(); i += 3 )
     {
@@ -9,18 +21,5 @@ int marsExploration(string s)
         if( s[i+2] != 'S' ) count++;    
     }
     
-    return count;
-}
-
-
-int marsExploration(string s)
-{
-    int count = 0;
-    const int n = s.size();
-
-    for (int i = 0; i < n; i += 3) {
-        count += (s[i] != 'S') + (s[i+1] != 'O') + (s[i+2] != 'S');
-    }
-
     return count;
 }
