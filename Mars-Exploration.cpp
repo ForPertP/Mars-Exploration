@@ -1,3 +1,14 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+/*
+ * Complete the 'marsExploration' function below.
+ *
+ * The function is expected to return an INTEGER.
+ * The function accepts STRING s as parameter.
+ */
+
 int marsExploration(string s)
 {
     int count = 0;
@@ -9,6 +20,7 @@ int marsExploration(string s)
 
     return count;
 }
+
 
 int marsExploration2(string s)
 {
