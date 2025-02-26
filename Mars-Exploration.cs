@@ -22,6 +22,21 @@ class Result
      * The function accepts STRING s as parameter.
      */
 
+    public static int marsExploration(string s)
+    {
+        int count = 0;
+        int n = s.Length;
+
+        for (int i = 0; i < n; i += 3)
+        {
+            count += (s[i] != 'S' ? 1 : 0) +
+                     (s[i + 1] != 'O' ? 1 : 0) +
+                     (s[i + 2] != 'S' ? 1 : 0);
+        }
+
+        return count;
+    }
+
 
 }
 
