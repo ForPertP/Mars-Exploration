@@ -20,8 +20,17 @@ class Result {
      */
 
     public static int marsExploration(String s) {
-    }
+        int count = 0;
+        int n = s.length();
 
+        for (int i = 0; i < n; i += 3) {
+            count += (s.charAt(i)   != 'S' ? 1 : 0) +
+                     (s.charAt(i+1) != 'O' ? 1 : 0) +
+                     (s.charAt(i+2) != 'S' ? 1 : 0);
+        }
+
+        return count;
+    }
 }
 
 
